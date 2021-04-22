@@ -104,7 +104,7 @@ class Enums_Parsing:
         return self.python_enums
 
 extensions = (".c", ".cpp", ".h", ".hpp")
-directory = 'D:/Ejust/3rd year/Semester One/Advanced Programming/assignment_2/project' 
+directory = 'D:/Ejust/3rdyear/SemesterOne/Advanced Programming/assignment_2/project' 
 test_files = Extract(extensions, directory)
 files = test_files.extract_files()
 
@@ -113,7 +113,7 @@ enums_strings = test_enums.extract_enums()
 enums_dic = test_enums.analyze_enums()
 python_enums = test_enums.convert_to_python()
 
-with open('D:/Ejust/3rd year/Semester One/Advanced Programming/assignment_2/Enums_in_python.py', 'w') as f:
+with open('D:/Ejust/3rdyear/SemesterOne/Advanced Programming/assignment_2/Enums_in_python.py', 'w') as f:
     f.write("import enum \n\n")
     for enum in python_enums:
         f.write(f"class {str(enum)[7:-2]}(enum.Enum): \n")
