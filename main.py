@@ -120,4 +120,4 @@ with open('D:/Ejust/3rd year/Semester One/Advanced Programming/assignment_2/Enum
         for member in enum:
             f.write(f"\t{member.name} = {member.value} \n")
         f.write("\n")
-    
+    f.close()
